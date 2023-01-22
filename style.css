@@ -109,41 +109,23 @@ h2 {
   position: relative;
   width: 7rem;
   height: 2.2rem;
-  transition: 1s;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 1rem;
-}
-
-#github-btn p {
-  position: absolute;
-  top: 0.3rem;
-  left: 1.6rem;
-  transition: 0.5s;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 #github-btn svg {
-  position: absolute;
-  top: 0.4rem;
-  right: 0.7rem;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  transition: 0.5s;
   height: 1.2rem;
   fill: #fff;
 }
 
-#github-btn:hover p {
-  left: 0.6em;
-}
-
-#github-btn:hover svg {
-  opacity: 1;
-}
-
 #github-btn:hover {
-  background-color: #e2703a;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 /**** Main image grid ****/
