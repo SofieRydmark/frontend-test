@@ -84,7 +84,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
-  animation: move-bg 40s linear infinite;
+  animation: move-bg 60s linear infinite;
 }
 
 @keyframes move-bg {
