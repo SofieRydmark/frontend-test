@@ -206,6 +206,7 @@ h3 {
   height: 100%;
   border-radius: 0.5rem 2rem;
   transition: transform 1s;
+  transform: rotateX(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
@@ -213,6 +214,8 @@ h3 {
 .card-back {
   transform: rotateY(180deg);
   border: 1px solid var(--text-color);
+  background-color: var(--body-color);
+  border-radius: 2rem 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
