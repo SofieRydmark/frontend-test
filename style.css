@@ -13,11 +13,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background-color: var(--body-color);
   color: var(--text-color);
-  scroll-behavior: smooth;
   animation: fadeIn 2s;
 }
 
@@ -81,6 +84,16 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
+  animation: move-bg 40s linear infinite;
+}
+
+@keyframes move-bg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
 }
 
 header-text {
@@ -115,7 +128,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 0.6rem;
 }
 
 #github-btn svg {
@@ -275,6 +288,19 @@ h5 {
     text-align: center;
   }
 
+  header {
+    background-size: inherit;
+  }
+
+  @keyframes move-bg {
+    from {
+      background-position: 0 10%;
+    }
+    to {
+      background-position: 0 100%;
+    }
+  }
+
   .image-grid {
     --num-cols: 4;
   }
@@ -300,6 +326,16 @@ h5 {
   }
 
   header {
+    background-size: cover;
     padding: 60px 18vw 0 18vw;
+  }
+
+  @keyframes move-bg {
+    from {
+      background-position: 0 25%;
+    }
+    to {
+      background-position: 0 100%;
+    }
   }
 }
